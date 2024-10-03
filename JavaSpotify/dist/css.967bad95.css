@@ -1,0 +1,68 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cover{
+    
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+ 
+    
+}
+
+.c1{
+    background-image: url(/cover1.01da7a3c.jpg);
+    background-size: cover;
+}
+.c2{
+    background-image: url(/cover2.4ee97fb8.jpg);
+    background-size: cover;
+}
+.c3{
+    background-image: url(/cover3.e55ef185.jpg);
+    background-size: cover;
+}
+
+.vinyl {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 37%, rgba(172,174,175,1) 48%, rgba(26,27,27,1) 59%, rgba(30,30,31,1) 100%);
+    
+}
+
+.detail{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: orangered;
+    
+}
+
+
+.label{
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.hole{
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.open + .vinyl{
+    transform: translate(-50px);
+}
+
+
+/*# sourceMappingURL=/css.967bad95.css.map */

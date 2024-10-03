@@ -1,0 +1,10 @@
+p{
+    color: black;
+    text-align: left;
+}
+b{
+    font-weight: normal;
+    transform-style: initial;
+    font-style: italic;
+    color: blue;
+}
