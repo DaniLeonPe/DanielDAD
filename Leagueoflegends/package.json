@@ -1,11 +1,11 @@
 {
   "name": "leagueoflegends",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve -d dist src/index.html",
-    "build": "parcel build -d build --public-url /Leagueoflegends/ src/index.html",
+    "build": "parcel build --dist-dir build --public-url /Leagueoflegends/ index.html",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],
