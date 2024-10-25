@@ -47,15 +47,16 @@ class Campeon {
     }
 
     async cambiarSkin(championImg) {
-        const maxSkins = this.skins.length; // Total de skins disponibles
+        /*const maxSkins = this.skins.length; // Total de skins disponibles
         console.log(`Total de skins: ${maxSkins}`);
-
-        // Incrementa currentSkinIndex
-        this.currentSkinIndex = (this.currentSkinIndex + 1) % (maxSkins + 1); // Incrementa y devuelve el nuevo número de skin (modulo para volver al principio)
+         */
+        
+               // Incrementa currentSkinIndex
+        this.currentSkinIndex = (this.currentSkinIndex + 1) % (maxSkins + 1); // Incrementa y devuelve el nuevo número de skin 
 
         let skinUrl;
 
-        // Determine the URL for the current skin
+        // Cambiar la skin según el índice actual
         if (this.currentSkinIndex === 0) {
             // Skin original
             skinUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${this.id}_0.jpg`;
@@ -94,11 +95,11 @@ class Campeon {
             <p><strong>Título:</strong> ${this.title}</p>
         `;
 
-        championDiv.appendChild(img); // Agregar la imagen
+        championDiv.appendChild(img); 
         championDiv.appendChild(name);
-        championDiv.appendChild(additionalInfo); // Agregar el contenedor de información adicional
+        championDiv.appendChild(additionalInfo); 
 
-        // Evento para mostrar información del campeón
+        
         championDiv.addEventListener('click', () => {
             this.mostrarInformacionCampeon();
         });

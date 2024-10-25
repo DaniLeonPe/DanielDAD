@@ -60,14 +60,14 @@ h1 {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Para el posicionamiento absoluto del overlay */
-    overflow: hidden; /* Para ocultar el contenido que sobresale */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .champion:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    filter: brightness(0.9); /* Oscurecer ligeramente */
+    filter: brightness(0.9);
 }
 
 .champion img {
@@ -102,60 +102,60 @@ h1 {
 
 /* Contenedor de información adicional */
 .additional-info {
-    display: none; /* Ocultar por defecto */
+    display: none; 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
-    color: white; /* Texto blanco */
-    padding: 20px; /* Espaciado */
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 20px; 
     border-radius: 10px;
-    text-align: left; /* Alinear texto a la izquierda */
+    text-align: left; 
 }
 
-/* Mostrar información adicional al pasar el cursor */
+
 .champion:hover .additional-info {
-    display: block; /* Mostrar información adicional */
+    display: block; 
 }
 
-/* Estilos para el Modal */
+
 /* Estilos para el Modal */
 #imagen-grande {
-    display: flex; /* Usar flexbox para centrar el contenido */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    position: fixed; /* Fijar el modal */
-    top: 0; /* Arriba */
-    left: 0; /* A la izquierda */
-    right: 0; /* A la derecha */
-    bottom: 0; /* Abajo */
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    z-index: 999; /* Asegurar que esté encima de otros elementos */
-    overflow: auto; /* Habilitar desplazamiento si el contenido se desborda */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 999; 
+    overflow: auto; 
 }
 
 .imagen-grande-container {
-    display: flex; /* Usar flexbox para el contenido del modal */
-    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el contenido */
-    padding: 20px; /* Espaciado */
-    border-radius: 10px; /* Bordes redondeados */
-    max-width: 90%; /* Ancho máximo para el modal */
-    max-height: 90%; /* Altura máxima para evitar sobresalir */
-    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+    display: flex; 
+    background: rgba(0, 0, 0, 0.9); 
+    padding: 20px; 
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%; 
+    overflow-y: auto;
 }
 
 .imagen-grande-container img {
-    width: 300px; /* Ajustar el tamaño de la imagen */
-    height: auto; /* Mantener la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados para la imagen */
-    margin-right: 20px; /* Espaciado a la derecha de la imagen */
+    width: 300px; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-right: 20px; 
 }
 
 .imagen-grande-texto {
-    color: #f0f0f5; /* Color de texto */
-    max-width: 60%; /* Limitar el ancho del texto para evitar desbordamiento */
+    color: #f0f0f5;
+    max-width: 60%;
 }
 
 #cerrar-imagen-grande {
@@ -163,8 +163,8 @@ h1 {
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 24px; /* Aumentar el tamaño del ícono de cierre */
-    color: #ffffff; /* Color blanco para el botón */
+    font-size: 24px; 
+    color: #ffffff; 
 }
 
 
@@ -172,32 +172,32 @@ h1 {
 .abilities {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar habilidades */
+    justify-content: center; 
     margin-top: 10px;
 }
 
 .ability {
     margin: 10px;
     text-align: center;
-    flex: 1 0 100px; /* Flexbox para hacer que cada habilidad tenga un ancho mínimo */
+    flex: 1 0 100px; 
 }
 
 .ability img {
-    width: 50px; /* Ajusta según sea necesario */
+    width: 50px; 
     height: auto;
-    border-radius: 4px; /* Bordes redondeados */
+    border-radius: 4px; 
 }
 
 .ability p {
-    margin: 5px 0 0; /* Espaciado superior para el texto de habilidades */
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el texto */
+    margin: 5px 0 0; 
+    font-size: 0.9rem; 
 }
 
-/* Estilos para los títulos */
+
 h2, h3, h4 {
-    color: #ffffff; /* Color de texto */
+    color: #ffffff; 
 }
 
 h3 {
-    margin-top: 20px; /* Espaciado superior para secciones */
+    margin-top: 20px; 
 }
